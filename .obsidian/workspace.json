@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "c4cb0ebbffebad59",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d1bf1c9f2920412",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea974246fbab5b64",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Untitled.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a520466217ce0692",
+    "type": "split",
+    "children": [
+      {
+        "id": "57199084a94bb962",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56166aa09a35bb1c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ec025f9b3f030c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e4be4100d1100c30",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7870f6793e27168e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5af6bc45a52de482",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bdbc97910b11052",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "afff03528ea284df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7d38a8639ef43fc8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "64c0d61ff55e628f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "ea974246fbab5b64",
+  "lastOpenFiles": [
+    "Notion/Página Inicial do Espaço de Equipe.md",
+    "Untitled.png",
+    "Notion/Começando com o Notion.md",
+    "Welcome.md",
+    "2024-08-12.md",
+    "Untitled.canvas",
+    "anotações aulas/Redes de computadores - anotações aula/Redes de computadores - anotações aula.md",
+    "Untitled 15.png",
+    "Untitled 14.png",
+    "Untitled 13.png",
+    "Untitled 13.jpeg",
+    "Untitled 12.png",
+    "Untitled 12.jpeg",
+    "Untitled 11 2.jpeg",
+    "Untitled 11 2.png",
+    "Untitled 11.png",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "anotações aulas/Arquitetura de computadores - anotações.md",
+    "anotações aulas",
+    "Notion/Task List/Task List.md",
+    "Notion/Task List/Take Fig on a walk.md",
+    "Notion/Task List/Sem título.md",
+    "Notion/Task List/New Task.md",
+    "Notion/Personal Home/Movie List.md",
+    "Notion/Personal Home/Yearly Goals.md",
+    "Notion/Personal Home/Personal Home.md",
+    "Notion/Lista de leituras/Nova série de TV.md",
+    "Notion/Lista de leituras/Netflix- explicando.md",
+    "Notion/Lista de leituras/Crime e Castigo.md",
+    "Notion/Lista de leituras/Admirável Mundo Novo.md",
+    "Notion/Diário/Tanto para ser grato.md",
+    "Notion/Diário/Só mais um dia.md",
+    "Notion/Diário/Reflexão diária.md",
+    "Notion/Diário/Procura por emprego - Setembro.md",
+    "Notion/Diário/Férias na Bahia.md",
+    "Notion/Diário/Encontro com o Eduardo.md",
+    "Notion/Diário/Diário.md",
+    "Notion/Diário/Aniversário de 28 anos.md",
+    "Notion/Anotações",
+    "Notion/Diário",
+    "Notion/Lista de leituras",
+    "Notion/Task List",
+    "Notion/EI - Unidade 2",
+    "Notion/Unidades 3 e 4 - Estudos independentes",
+    "anotações aulas/Redes de computadores - anotações aula",
+    "Notion/Personal Home",
+    "Notion"
+  ]
+}
