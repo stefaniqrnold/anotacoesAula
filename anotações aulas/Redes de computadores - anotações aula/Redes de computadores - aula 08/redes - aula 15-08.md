@@ -126,4 +126,11 @@ o q vem de cima fodase, pode encapsular e passar pra baixo, o mlk de lá que se 
 
 https://www.alura.com.br/artigos/conhecendo-o-modelo-osi?srsltid=AfmBOoqCQAGIIy1TC3f_zJKOpH6tmvBdB33qQmcsGvFdrs7Ir0xSwFu3
 
-https://www.alura.com.br/artigos/conhecendo-o-modelo-osi?srsltid=AfmBOoqCQAGIIy1TC3f_zJKOpH6tmvBdB33qQmcsGvFdrs7Ir0xSwFu3
+QUESTIONÁRIO - DEFINA QUAL CAMADA...
+- Define quantos volts passam pelo cabo de rede?
+- Defina a forma como a comunicação ocorre entre os dois dispositivos em uma rede local, incluindo o controle de acesso ao meio físico?
+- Define qual que é a rota correta entre o ponto A e o ponto B?
+- Recebe as informações, coloca elas em ordem e confere se veio todas as partes?
+- Sincroniza as informações entre aplicações (por exemplo: mantém um login ativo por X minutos)?
+- Codifica/decodifica informações para compreensão dos dois lados da comunicação (tradutor)?
+- Interface que o usuário utiliza?
