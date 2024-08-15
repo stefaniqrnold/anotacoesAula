@@ -8,13 +8,55 @@ O processo de enviar uma requisição para um servidor é parecido com o de envi
 
 O termo “protocolo OSI” refere-se ao Modelo de Referência OSI (*Open Systems Interconnection*), também conhecido como Modelo OSI.
 
+7 - Aplicação 
+
+- Serviços de aplicação
+    - Navegador Chrome
+    - Cliente de email: outlook
+    - streaming de musica: Spotify
+- protocolos de aplicação
+
+6 - Apresentação
+
+- Conversão de formatos
+    - PDF para base64
+- Compressão de dados
+    - Compacta dados para reduzir o tamanho da transmissão, economizando largura de banda e tempo de transmissão
+- Exemplo
+- a
+- Lado A utiliza kesjfgwiyçahrfeua
+
 `camada 5` → gerenciamento da comunicação: pessoa A pode definir um tempo específico para enviar a carta e verificar se ele deve esperar uma resposta.
 
 correspondente ao tempo que um usuário permanece logado em um sistema
 
+- Gerenciamento de Sessão
+    - Estabelecimento, Manutenção e Encerramento (Garantia de conexão ativa durante a comunicação)
+- Sincronização
+    - Adiciona marcadores ou pontos de verificação (checkpoints) para permitir a sincronização
+- Exemplo
+    - Tempo de permanência logado em algum site
+- Analogia
+    - Marca um horário para uma videoconferência (Estabelece a intenção de conexao)
+    - faz a conexão
+    - troca informações
+    - checa a conexão
+    - encerra a chamada
+
 `camada 4` → transporte: coloca a carta em um envelope e endereça. esse envelope garante que a carta chegue ao endereço correto e q seja entregue na ordem certa
 
 serviço de correio com rastreamento e confirmação de recebimento para garantir que a carta chegue ao destinatário
+
+- Controle de fluxo
+    - Gerencia a quantidade de dados que o remetente pode enviar antes de receber uma confirmação do receptor
+- Segmentação e Reassemblagem
+    - Divide grandes blocos de dados da Camada 5 (sessão) em segmentos menores
+- Conexão
+    - Estabelece e finaliza a conexão
+- Protocolos
+    - UDP e TCP
+- Portal de comunicação
+    - 25 e 443 (https)
 
 `camada 3` → rede: a carte é entao enviada através do serviço de correios, que a roteia atraves de diferentes centros de distribuição e possíveis rotas ate chegar a cidade da pessoa B
 
@@ -76,5 +118,12 @@ o q vem de cima fodase, pode encapsular e passar pra baixo, o mlk de lá que se 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/80384c39-f40f-4fef-b69e-ecfc27a0dc4d/7559fdcb-bb3f-45ed-a894-26e2dc1dbc13/image.png)
 
 *oq cortou é ethernet*
+
+**RM-OSI**
+
+- Desenvolvimento modular
+- Independência de tecnologia
+
+https://www.alura.com.br/artigos/conhecendo-o-modelo-osi?srsltid=AfmBOoqCQAGIIy1TC3f_zJKOpH6tmvBdB33qQmcsGvFdrs7Ir0xSwFu3
 
 https://www.alura.com.br/artigos/conhecendo-o-modelo-osi?srsltid=AfmBOoqCQAGIIy1TC3f_zJKOpH6tmvBdB33qQmcsGvFdrs7Ir0xSwFu3
