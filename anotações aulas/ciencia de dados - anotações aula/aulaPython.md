@@ -277,3 +277,59 @@ Saída:
 2
 3
 4
+
+• Nomeação de Variáveis
+○ Use nomes descritivos
+
+• Documentação
+○ Comente o código e use docstrings para funções
+
+■ Nomes de variáveis descritivos ajudam a tornar o código mais legível e compreensível.
+■ Um bom nome de variável deve indicar claramente o propósito ou o valor que ela armazena.
+■ Isso torna mais fácil para outras pessoas (e para você mesmo, no futuro) entender o que o código faz sem precisar ler cada linha detalhadamente.
+
+■ # Nome não descritivo
+■ x = 10
+■ y = 20
+■ z = x + y
+■
+■ # Nome descritivo
+■ altura = 10
+■ largura = 20
+■ area = altura + largura
+
+○ Comente o Código
+■ Comentários são trechos de texto dentro do código que não são executados, mas servem para explicar o que o código faz.
+■ Eles são úteis para documentar a lógica, os detalhes complexos ou os motivos por trás de certas decisões de design.
+
+■ Use comentários para explicar partes complexas do código.
+
+■ # Calcula a área de um retângulo
+■ altura = 10
+■ largura = 20
+■ area = altura * largura # Multiplica altura e largura para obter a área
+
+■ Evite comentários redundantes que apenas repetem o que o código já expressa claramente.
+
+■ # Evite isto:
+■ x = 10 # Define x como 10
+■
+■ # Melhor:
+■ numero_de_usuarios = 10 # Número inicial de usuários no sistema
+
+○ Use Docstrings para Funções
+■ Docstrings são strings literais usadas para documentar módulos, classes e funções.
+■ Elas devem ser a primeira linha dentro da definição da função, classe ou módulo, e são cercadas por três aspas duplas (""").
+
+1. Use docstrings para descrever o que a função faz, seus parâmetros e o valor de retorno.
+2. def calcular_media(numeros):
+3.  """
+4.  Calcula a média de uma lista de números.
+5.
+6.  Args:
+7.      numeros (list): Uma lista de números.
+8.
+9.  Returns:
+10.         float: A média dos números na lista.
+11.     """
+12.     return sum(numeros) / len(numeros)
