@@ -90,7 +90,7 @@ Mas qual é a função da camada física do modelo OSI? Nesta camada são especi
 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/80384c39-f40f-4fef-b69e-ecfc27a0dc4d/57f3d936-aed1-4014-b881-d7e5b23ff154/image.png)
 
-EXEMPLO DE ACESSO A UM SERVIÇO
+**EXEMPLO DE ACESSO A UM SERVIÇO**
 
 - Quando quero acessar um site
     - Navegador → Servidor (Serviço web)
@@ -126,7 +126,7 @@ o q vem de cima fodase, pode encapsular e passar pra baixo, o mlk de lá que se 
 
 https://www.alura.com.br/artigos/conhecendo-o-modelo-osi?srsltid=AfmBOoqCQAGIIy1TC3f_zJKOpH6tmvBdB33qQmcsGvFdrs7Ir0xSwFu3
 
-QUESTIONÁRIO - DEFINA QUAL CAMADA...
+**QUESTIONÁRIO - DEFINA QUAL CAMADA...**
 - Define quantos volts passam pelo cabo de rede?
 - Defina a forma como a comunicação ocorre entre os dois dispositivos em uma rede local, incluindo o controle de acesso ao meio físico?
 - Define qual que é a rota correta entre o ponto A e o ponto B?
@@ -135,7 +135,7 @@ QUESTIONÁRIO - DEFINA QUAL CAMADA...
 - Codifica/decodifica informações para compreensão dos dois lados da comunicação (tradutor)?
 - Interface que o usuário utiliza?
 
-QUESTÕES DE FIXAÇÃO
+**QUESTÕES DE FIXAÇÃO**
 1. Por que foi criado o RM-OSI?
 2. O que é um ativo de rede e qual a sua relação com o RM-OSI?
 3. Diga quais são as camadas do modelo OSI e qual a função de cada uma delas?
