@@ -8,7 +8,7 @@ O processo de enviar uma requisição para um servidor é parecido com o de envi
 
 O termo “protocolo OSI” refere-se ao Modelo de Referência OSI (*Open Systems Interconnection*), também conhecido como Modelo OSI.
 
-7 - Aplicação 
+`7 - Aplicação` 
 
 - Serviços de aplicação
     - Navegador Chrome
@@ -16,8 +16,7 @@ O termo “protocolo OSI” refere-se ao Modelo de Referência OSI (*Open System
     - streaming de musica: Spotify
 - protocolos de aplicação
 
-6 - Apresentação
-
+`6 - Apresentação`
 - Conversão de formatos
     - PDF para base64
 - Compressão de dados
@@ -26,7 +25,9 @@ O termo “protocolo OSI” refere-se ao Modelo de Referência OSI (*Open System
 - a
 - Lado A utiliza kesjfgwiyçahrfeua
 
-`camada 5` → gerenciamento da comunicação: pessoa A pode definir um tempo específico para enviar a carta e verificar se ele deve esperar uma resposta.
+`camada 5`
+
+→ gerenciamento da comunicação: pessoa A pode definir um tempo específico para enviar a carta e verificar se ele deve esperar uma resposta.
 
 correspondente ao tempo que um usuário permanece logado em um sistema
 
@@ -43,7 +44,9 @@ correspondente ao tempo que um usuário permanece logado em um sistema
     - checa a conexão
     - encerra a chamada
 
-`camada 4` → transporte: coloca a carta em um envelope e endereça. esse envelope garante que a carta chegue ao endereço correto e q seja entregue na ordem certa
+`camada 4` 
+
+→ transporte: coloca a carta em um envelope e endereça. esse envelope garante que a carta chegue ao endereço correto e q seja entregue na ordem certa
 
 serviço de correio com rastreamento e confirmação de recebimento para garantir que a carta chegue ao destinatário
 
@@ -58,11 +61,15 @@ serviço de correio com rastreamento e confirmação de recebimento para garanti
 - Portal de comunicação
     - 25 e 443 (https)
 
-`camada 3` → rede: a carte é entao enviada através do serviço de correios, que a roteia atraves de diferentes centros de distribuição e possíveis rotas ate chegar a cidade da pessoa B
+`camada 3` 
+
+→ rede: a carte é entao enviada através do serviço de correios, que a roteia atraves de diferentes centros de distribuição e possíveis rotas ate chegar a cidade da pessoa B
 
 a camada de rede se preocupa com o fato de q nem sempre o caminho mais rápido é o mais eficiente 
 
-`2 - enlace de dados`  → Nos centros de distribuição e em sua cidade, a carta passa por verificações de triagem para garantir que seja manipulada corretamente e enviada para o endereço final.
+`2 - enlace de dados`  
+
+→ Nos centros de distribuição e em sua cidade, a carta passa por verificações de triagem para garantir que seja manipulada corretamente e enviada para o endereço final.
 
 Fazendo um paralelo com os correios, essa camada funciona como um fiscal. Ele observa se os pacotes têm algum defeito em sua formatação e controla o fluxo com que eles são enviados.
 
@@ -75,7 +82,9 @@ Fazendo um paralelo com os correios, essa camada funciona como um fiscal. Ele ob
 - Fragmentação e Reassemblagem
     - Divide informações grandes em fragmentos para permitir a transmissão
 
-`1 - Física` → A carta é fisicamente transportada pelos correios usando meios de transporte como caminhões, carros, motos, etc. Na camada física, isso corresponde à transmissão real dos bits de dados através de meios físicos, como BATATAS
+`1 - Física` 
+
+→ A carta é fisicamente transportada pelos correios usando meios de transporte como caminhões, carros, motos, etc. Na camada física, isso corresponde à transmissão real dos bits de dados através de meios físicos, como BATATAS
 
 Mas qual é a função da camada física do modelo OSI? Nesta camada são especificados os [**dispositivos, como hubs**](https://www.alura.com.br/artigos/diferencas-entre-hubs-e-switches) e os meios de transmissão, como os [cabos de rede](https://www.alura.com.br/artigos/entendendo-os-cabos-de-rede).
 
