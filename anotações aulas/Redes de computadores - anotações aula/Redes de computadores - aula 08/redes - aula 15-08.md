@@ -134,3 +134,10 @@ QUESTIONÁRIO - DEFINA QUAL CAMADA...
 - Sincroniza as informações entre aplicações (por exemplo: mantém um login ativo por X minutos)?
 - Codifica/decodifica informações para compreensão dos dois lados da comunicação (tradutor)?
 - Interface que o usuário utiliza?
+
+QUESTÕES DE FIXAÇÃO
+1. Por que foi criado o RM-OSI?
+2. O que é um ativo de rede e qual a sua relação com o RM-OSI?
+3. Diga quais são as camadas do modelo OSI e qual a função de cada uma delas?
+4. Explique a ideia de encapsulamento entre camadas do modelo OSI.
+5. Qual a diferença de serviços de aplicação para protocolos de aplicação? Dê alguns exemplos de cada uma das terminologias.
