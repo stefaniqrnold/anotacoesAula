@@ -83,7 +83,7 @@ O Modelo OSI é uma estrutura conceitual que padroniza as funções de um sistem
 - **Especificação do Meio:** 
   - Define os dispositivos e os tipos de cabos (como hubs, cabos de rede).
 - **Modo de Transmissão:**
-  - *Simplex*: Unidirecional (ex: rádio).
+  - *Simplex*: Unidirecional (ex: rádio, projetor).
   - *Half-Duplex*: Bidirecional alternado (ex: walkie-talkie).
   - *Full-Duplex*: Bidirecional simultâneo (ex: telefone).
 
