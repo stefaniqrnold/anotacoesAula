@@ -6,5 +6,3 @@
 - base hexadecimal - 16
 
 - conversões - ver slides depois
-
- - 
