@@ -2,13 +2,9 @@ RFC -
 
 - **internet** - ligação entre redes, INTERCONEXÃO
 
-  
-
 PTT - liga os provedores de internet, outros PTT’s, servidores, entre outras varias coisas. é uma infraestrutura física
 
 backbone - responsável por fazer a ligação interna da internet, “espinha dorsal” da internet. liga todos os servidores em um só
-
-  
 
 - **Evolução**
 
@@ -16,38 +12,25 @@ inicialmente - sistemas altamente centralizado
 
 os componentes da rede eram basicamente computadores de mesa, estações de trabalho, e servidores web, de e-mail e de mensagens
 
-  
-
 atualmente - sistemas distribuídos
 
 estão sendo conectados
-
-  
 
 sistemas finais: desktop, celular…
 
 curiosidade: o Brasil foi um dos únicos países que não caiu a internet na pandemia. ele “deu conta”, esteve preparado para uma grande quantidade de consumo de internet simultânea.
 
-  
-
 cabos oceânicos: servem pra transmitir dados entre longas distancias
 
-  
-
-envio de pacotes
-
-  
+envio de pacotes  
 
 o endereçamento dos PCs na versão 4 do IP eh em trono de 4bi
-
-  
 
 dominio - endereco (youtube.com)
 
 ![[Untitled.png]]
 
   
-
 **CLASSIFICAÇÃO DAS REDES**
 
 se tiver w na frente quer dizer que é sem fio
@@ -75,28 +58,21 @@ topologia ponto a ponto: ligação entre dois computadores ( tipo uma impressora
 - forma fisica
 - forma lógica: conexão VPN - PC com servidor
 
-  
 
 ### **topologia - anel**
 
 - toda comunicação passa de um computador para o outro. topologia em desuso
 
-  
-
 ### **topologia - barramento**
 
 - todos os hosts compartilham o mesmo meio físico. enquanto um equipamento transmite a informação, todos “escutam”
 - Broadcast elevado - manda informação pra todo mundo
-
   
-
 ### **topologia - estrela**
 
 - ligação de todos os computadores em um nó central
 - vantagem: se um aparelho parar de funcionar, os outros continuam funcionando. contudo, se o aparelho central cair, todos caem
 - é a topologia mais utilizada
-
-  
 
 ### **topologia - malha “**_**mash**_**”**
 
@@ -107,19 +83,11 @@ topologia ponto a ponto: ligação entre dois computadores ( tipo uma impressora
 - a wifi da UNIJUI não eh considerada uma malha completa
 - pra ser completa, os roteadores teriam que estar mais próximos. por isso a conexão da fidene com o campus seria parcial, pois está bem longe(nseipqnavdd)
 
-  
-
 tipologia - arvore
 
 - funciona como uma arvore genealogica. é por hierarquia, cada nó tem seus respectivos filhos
 
-  
-
 ### Topologia - híbrida
-
-  
-
-  
 
 ## QUESTÕES
 
