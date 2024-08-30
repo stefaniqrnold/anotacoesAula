@@ -168,5 +168,100 @@ qtdd2 = int((((((valor % 100) % 50) % 20) % 10) % 5)/2)
 qtdd1 = int((((((valor % 100) % 50) % 20) % 10) % 5) % 2)
 
 print(f"{valor}\n{qtdd100} nota(s) de R$ 100,00\n{qtdd50} nota(s) de R$ 50,00\n{qtdd20} nota(s) de R$ 20,00\n{qtdd10} nota(s) de R$ 10,00\n{qtdd5} nota(s) de R$ 5,00\n{qtdd2} nota(s) de R$ 2,00\n{qtdd1} nota(s) de R$ 1,00")
-"""
+
 # Conversão de Tempo
+tempo = int(input())
+horas = int(tempo/3600)
+minutos = int((tempo % 3600)/60)
+segundos = int((tempo % 3600) % 60)
+
+print(f"{horas}:{minutos}:{segundos}")
+
+# Idade em Dias
+tempo = int(input())
+anos = int(tempo/365)
+meses = int((tempo % 365)/30)
+dias = int((tempo % 365) % 30)
+
+print(f"{anos} ano(s)\n{meses} mes(es)\n{dias} dia(s)")
+
+# Notas e Moedas -> refazer com dicionario
+valor = float(input())
+qtdd100 = int(valor/100)
+qtdd50 = int((valor % 100)/50)
+qtdd20 = int(((valor % 100) % 50)/20)
+qtdd10 = int((((valor % 100) % 50) % 20)/10)
+qtdd5 = int(((((valor % 100) % 50) % 20) % 10)/5)
+qtdd2 = int((((((valor % 100) % 50) % 20) % 10) % 5)/2)
+
+qtdd1 = int((((((valor % 100) % 50) % 20) % 10) % 5) % 2)
+qtdd050 = int((((((((valor % 100) % 50) % 20) % 10) % 5) % 2) % 1)/0.50)
+qtdd025 = int((((((((valor % 100) % 50) % 20) % 10) % 5) % 2) % 0.50)/0.25)
+qtdd010 = int(((((((((valor % 100) % 50) % 20) % 10) % 5) % 2) % 0.50) % 0.25)/0.10)
+qtdd005 = int((((((((((valor % 100) % 50) % 20) % 10) % 5) % 2) % 0.50) % 0.25) % 0.10)/0.05)
+qtdd001 = int(((((((((((valor % 100) % 50) % 20) % 10) % 5) % 2) % 0.50) % 0.25) % 0.10) % 0.05)/0.01)
+
+# print(f"NOTAS:
+{qtdd100} nota(s) de R$ 100.00
+{qtdd50} nota(s) de R$ 50.00
+{qtdd20} nota(s) de R$ 20.00
+{qtdd10} nota(s) de R$ 10.00
+{qtdd5} nota(s) de R$ 5.00
+{qtdd2} nota(s) de R$ 2.00
+MOEDAS:
+{qtdd1} moeda(s) de R$ 1.00
+{qtdd050} moeda(s) de R$ 0.50
+{qtdd025} moeda(s) de R$ 0.25
+{qtdd010} moeda(s) de R$ 0.10
+{qtdd005} moeda(s) de R$ 0.05
+{qtdd001} moeda(s) de R$ 0.01")
+
+# Teste de Seleção 1
+lista = list(map(int, input().split(" ")))
+a = lista[0]
+b = lista[1]
+c = lista[2]
+d = lista[3]
+
+if b > c and d > a and (c + d) > (a + b) and c >= 0 and d >= 0 and a % 2 == 0:
+      print("Valores aceitos")
+else:
+    print("Valores nao aceitos")
+
+# Fórmula de Bhaskara
+import math
+
+lista = list(map(float, input().split(" ")))
+a = lista[0]
+b = lista[1]
+c = lista[2]
+
+delta = (b ** 2) - (4 * a * c)
+
+# print(math.sqrt(delta))
+# print(delta)
+if a == 0 or delta < 0:
+    print("Impossivel calcular")
+else:
+    x1 = (- b + (math.sqrt(delta))) / (2 * a)
+    x2 = (- b - (math.sqrt(delta))) / (2 * a)
+    print(f"R1 = {x1:.5f}\nR2 = {x2:.5f}")
+
+# Intervalo
+valor = float(input())
+
+if 0 <= valor <= 25:
+    print("Intervalo [0,25]")
+    
+elif 25 < valor <= 50: 
+    print("Intervalo (25,50]")
+    
+elif 50 < valor <= 75:
+    print("Intervalo (50,75]")
+    
+elif 75 < valor <= 100:
+    print("Intervalo (75,100]")
+    
+else:
+    print("Fora de intervalo")
+"""
