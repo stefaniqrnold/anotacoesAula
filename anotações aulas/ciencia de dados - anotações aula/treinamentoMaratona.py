@@ -264,10 +264,113 @@ elif 75 < valor <= 100:
     
 else:
     print("Fora de intervalo")
-"""
+
 # Média 3
 lista = list(map(float, input().split(" ")))
 n1 = lista[0]
 n2 = lista[1]
 n3 = lista[2]
 n4 = lista[3]
+
+media = ((n1 * 2) + (n2 * 3) + (n3 * 4) + (n4))/10
+
+print(f"Media: {media:.1f}")
+if media >= 7.0:
+    print("Aluno aprovado.")
+elif 5.0 > media:
+    print("Aluno reprovado.")
+elif 5.0 <= media <= 6.9:
+    print("Aluno em exame.")
+    exame = float(input())
+    print(f"Nota do exame: {exame:.1f}")
+    media2 = (media + exame)/2
+    if media2 >= 5.0:
+        print("Aluno aprovado.")
+    else:
+        print("Aluno reprovado.")
+    print(f"Media final: {media2:.1f}")
+
+# Tempo de Jogo
+lista = list(map(int, input().split(" ")))
+
+inicio = lista[0]
+fim = lista[1]
+
+if inicio > fim:
+    
+    duracao = (24 - inicio) + fim
+    
+elif inicio < fim:
+    
+    duracao = fim - inicio
+    
+elif inicio == fim:
+    
+    duracao = 24
+
+print(f"O JOGO DUROU {int(duracao)} HORA(S)")
+"""
+# Tempo de Jogo com Minutos
+lista = list(map(int, input().split(" ")))
+
+inicioH = lista[0]
+inicioM = lista[1]
+fimH = lista[2]
+fimM = lista[3]
+
+if inicioH > fimH:
+    
+    duracaoH = (24 - inicioH) + fimH
+    
+    if inicioM > fimM:
+        
+        duracaoH = duracaoH - 1
+        duracaoM = (60 - inicioM) + fimM
+    
+    
+    elif inicioM < fimM:
+        
+        duracaoM = fimM - inicioM
+    
+    elif inicioM == fimM:
+    
+        duracaoM = 0
+    
+elif inicioH < fimH:
+    
+    duracaoH = fimH - inicioH 
+    
+    if inicioM > fimM:
+    
+        duracaoM = (60 - inicioM) + fimM
+        duracaoH = duracaoH - 1
+        
+    elif inicioM < fimM:
+        
+        duracaoM = fimM - inicioM
+    
+    elif inicioM == fimM:
+    
+        duracaoM = 0
+        
+elif inicioH == fimH:
+    
+    duracaoH = 24
+    
+    if inicioM > fimM:
+        
+        duracaoH = duracaoH - 1
+        duracaoM = (60 - inicioM) + fimM
+    
+    elif inicioM < fimM:
+        
+        duracaoH = 0
+        duracaoM = fimM - inicioM
+    
+    elif inicioM == fimM:
+    
+        duracaoM = 0
+
+print(f"O JOGO DUROU {int(duracaoH)} HORA(S) E {int(duracaoM)} MINUTO(S)")
+#2:50
+#3:00
