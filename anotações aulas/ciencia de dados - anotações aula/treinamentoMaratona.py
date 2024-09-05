@@ -309,7 +309,7 @@ elif inicio == fim:
     duracao = 24
 
 print(f"O JOGO DUROU {int(duracao)} HORA(S)")
-"""
+
 # Tempo de Jogo com Minutos
 lista = list(map(int, input().split(" ")))
 
@@ -374,3 +374,52 @@ elif inicioH == fimH:
 print(f"O JOGO DUROU {int(duracaoH)} HORA(S) E {int(duracaoM)} MINUTO(S)")
 #2:50
 #3:00
+
+# BEE 2165
+texto = str(input())
+if len(texto) <= 140:
+    print("TWEET")
+elif len(texto) > 140:
+    print("MUTE")
+"""
+# BEE 2203
+lista = list(map(int, input().split(" ")))
+lista2 = list(map(int, input().split(" ")))
+
+xf = lista[0]
+yf = lista[1]
+xi = lista[2]
+yi = lista[3]
+vi = lista[4]
+r1 = lista[5]
+r2 = lista[6]
+
+rangeMinXF = (xf - r1 - r2)
+rangeMaxXF = (xf + r1 + r2)
+rangeMinYF = (yf - r1 - r2)
+rangeMaxYF = (yf + r1 + r2)
+d = (vi * 1.5)
+
+if rangeMaxXF >= (xi + d) and rangeMinXF <= (xi - d) and rangeMaxYF >= (yi + d) and (rangeMinYF) <= (yi - d):
+    print("Y")
+else:
+    print("N")
+    
+xf = lista2[0]
+yf = lista2[1]
+xi = lista2[2]
+yi = lista2[3]
+vi = lista2[4]
+r1 = lista2[5]
+r2 = lista2[6]
+
+rangeMinXF = (xf - r1 - r2)
+rangeMaxXF = (xf + r1 + r2)
+rangeMinYF = (yf - r1 - r2)
+rangeMaxYF = (yf + r1 + r2)
+d = (vi * 1.5)
+
+if rangeMaxXF >= (xi + d) and rangeMinXF <= (xi - d) and rangeMaxYF >= (yi + d) and (rangeMinYF) <= (yi - d):
+    print("Y")
+else:
+    print("N")
