@@ -7,7 +7,7 @@ X = A + B
 
 print(f"X = {X}")
 
-# questao 3
+# BEE 1002
 r = float(input())
 pi = float(3.14159)
 
