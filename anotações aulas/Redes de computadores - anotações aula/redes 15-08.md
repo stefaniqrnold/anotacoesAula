@@ -1,6 +1,4 @@
-<aside>
-💡 **AULA 15/08**
-</aside>
+**<aside>AULA 15/08 </aside>**
 
 `Modelo RM-OSI`
 
