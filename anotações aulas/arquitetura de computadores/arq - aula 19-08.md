@@ -30,7 +30,7 @@
 
     1 G = $2^{30}$ = 1.073.741.824 bits
 
-    maior emdereço: N - 1
+    maior endereço: N - 1
 
     T = N . M
 
