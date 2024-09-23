@@ -84,7 +84,7 @@ Aqui está um exemplo básico que soma dois números e armazena o resultado:
 
 A programação em Assembly fornece controle direto sobre o hardware, interagindo com registradores, memória e instruções do processador. Compreender os princípios da **Arquitetura de Computadores** é essencial para dominar Assembler, pois é a base de como as instruções são executadas e como os dados são manipulados no nível mais baixo do sistema.
 
-### exemplo dado em aula
+### exemplos dado em aula
     ; meu primeiro programa em Assembler
     MOV AL,1 ; copia 1 para AL
     MOV BL,2 ; copia 2 para BL
@@ -95,3 +95,27 @@ A programação em Assembly fornece controle direto sobre o hardware, interagind
     ADD DL,AL ; soma o valor de AL em DL
     SUB DL,AL ; diminui de DL o valor de AL
     END ; finaliza o programa
+
+---
+
+    ; equação x = 3 * (2 - 1)
+    MOV AL, 3
+    MOV BL, 2
+    MOV CL, 1
+    SUB BL, CL
+    MUL AL, BL
+
+    END
+
+---
+
+    ; equação x = 2 + 4 * (3-1)
+    MOV AL, 2
+    MOV BL, 4
+    MOV CL, 3
+    MOV DL, 1
+    SUB CL, DL
+    MUL BL, CL
+    ADD AL, BL
+
+    END
