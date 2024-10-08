@@ -1,0 +1,92 @@
+# Conceitos Fundamentais de Gerenciamento de Memória
+## Memória Física e Virtual:
+
+- Memória Física: Espaço real na RAM que o sistema operacional e os processos usam para armazenar dados.
+
+- Memória Virtual: Um conceito usado pelos sistemas operacionais para dar a impressão de que há mais memória disponível do que fisicamente existe. Os processos utilizam endereços lógicos, que são convertidos em endereços físicos pela MMU (Memory Management Unit).
+
+## MMU (Memory Management Unit):
+
+- Componente de hardware que traduz endereços lógicos (virtuais) em endereços físicos.
+
+- Faz a proteção da memória, impedindo que processos acessem áreas que não foram alocadas para eles.
+
+## Hierarquia de Memória:
+
+- A memória é organizada em níveis hierárquicos que variam em velocidade e capacidade, como cache, RAM e memória auxiliar (disco rígido ou SSD). Mais pra cima = mais rapido e menos espaço (CAPACIDADE E VELOCIDADE SÃO INVERSAMENTE PROPORCIONAIS *[O cahce mais alto é 10mb, RAM é nuns 16GB, disco 1TB]*)
+
+## Tempo de Acesso e Latência:
+
+- O tempo de acesso varia entre tipos de memória. A RAM tem tempo de acesso muito menor que o disco. O tempo médio de acesso à memória pode ser influenciado pela ocorrência de faltas de página.
+
+## Memória Virtual
+## Partições e Segmentos:
+
+- Partições: A forma mais simples de gerenciar a memória física, onde ela é dividida em blocos contíguos. Cada processo recebe uma partição, e há um registrador base e limite que controla o espaço de cada processo.
+
+- Segmentação: A memória é dividida em segmentos (TEXT, DATA, etc.) de tamanhos variáveis, cada um com políticas de acesso distintas. É mais flexível que a partição, mas também pode causar fragmentação externa.
+
+## Paginação:
+
+- A paginação divide a memória física e virtual em blocos de tamanho fixo chamados páginas (memória virtual) e quadros (memória física). A tradução entre eles é feita por uma tabela de páginas.
+
+- Cada processo tem sua tabela de páginas. As páginas que não estão sendo usadas podem ser movidas para o disco para liberar espaço na RAM.
+
+## TLB (Translation Lookaside Buffer):
+
+- Pequena memória cache dentro da MMU que armazena as últimas traduções de endereços virtuais para físicos, agilizando o processo e reduzindo o tempo de acesso à memória.
+
+## Paginação em Disco
+## Falta de Página (Page Fault):
+
+- Ocorre quando um processo tenta acessar uma página que não está na memória RAM, resultando em uma interrupção e movimentação da página do disco para a RAM.
+
+    - O sistema pode estar em dois estados: memória saturada (quando é preciso liberar uma página da RAM para carregar uma nova) e memória não saturada (há espaço disponível para novas páginas).
+
+## Swapping e Paging:
+
+- Swapping: Um processo inteiro é movido da memória para o disco (swap out) quando está ocioso e trazido de volta quando necessário (swap in). Usado menos frequentemente hoje.
+
+- Paging: Paginação de partes (páginas) do processo, movendo páginas individuais para o disco quando não estão sendo usadas.
+
+## Critérios para Seleção de Páginas a Serem Movidas para o Disco:
+
+- Idade da página: Páginas mais antigas têm maior chance de serem movidas.
+
+- Frequência de acesso: Páginas menos acessadas recentemente podem ser substituídas.
+
+## Algoritmos de Substituição de Páginas
+
+- FIFO (First In, First Out): As páginas são substituídas na ordem em que foram carregadas. Simples de implementar, mas pode não ser eficiente, pois não leva em conta se as páginas antigas ainda estão sendo usadas.
+
+- LRU (Least Recently Used): Substitui a página que não foi utilizada há mais tempo, com base na suposição de que páginas usadas recentemente continuarão sendo usadas. É um dos algoritmos mais eficientes, mas consome mais recursos, pois precisa manter o controle de acesso a cada página.
+
+    Algoritmo Ótimo (OPT): Substitui a página que será utilizada mais tarde no futuro, mas é apenas teórico, pois o sistema não pode prever o futuro.
+
+    Segunda Chance (Relógio): Variante do LRU, menos complexa. Dá uma "segunda chance" para páginas usadas recentemente, evitando a remoção imediata.
+
+## Fragmentação de Memória
+
+- Fragmentação Interna: Ocorre quando um processo não usa todo o bloco de memória que lhe foi alocado, resultando em desperdício dentro do bloco.
+
+- Fragmentação Externa: Acontece quando a memória está fragmentada em blocos não contíguos. Mesmo que haja espaço livre suficiente, ele não está contíguo para alocar novos processos.
+
+- Alocador Buddy: Técnica que aloca blocos de memória em potências de 2 para reduzir a fragmentação externa, mas pode causar fragmentação interna. Por exemplo, se um processo requisitar 258 KB, será alocado 512 KB.
+
+## Cálculos Importantes
+
+- Tempo Médio de Acesso à Memória: O tempo médio de acesso é influenciado pelo tempo de acesso à RAM e ao disco, e pela frequência de faltas de página. Quando há memória saturada, o tempo de acesso ao disco se torna mais relevante, pois o SO precisa retirar uma página para liberar espaço.
+
+- Número de Faltas de Página: Algoritmos como LRU e FIFO podem ser usados para determinar o número de faltas de página com base em uma sequência de acessos.
+
+## Pontos Importantes para a Prova:
+
+- Entenda a diferença entre segmentação, paginação e partições.
+
+- Saiba como funciona a TLB e a MMU.
+
+- Esteja familiarizado com algoritmos de substituição de páginas como FIFO, LRU e o algoritmo ótimo (OPT).
+
+- Saiba calcular o tempo médio de acesso à memória em diferentes cenários de saturação.
+
+- Estude as causas e o tratamento de faltas de página.
